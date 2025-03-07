@@ -54,3 +54,28 @@ img {
   padding-bottom: 5px;
   border-bottom: 2px solid var(--icon-color);
 }
+
+/* Start Media Queries */
+
+/* Devices (less than 992px) */
+@media (max-width: 991.98px) {
+  .container {
+    width: 98%;
+    margin: 0 auto 25px;
+  }
+}
+
+/* Devices (less than 768px) */
+@media (max-width: 767.98px) {
+  .container {
+    margin: 0 auto 15px;
+  }
+}
+
+/* Devices(less than 576px) */
+@media (max-width: 575.98px) {
+  .container {
+    width: 95%;
+    margin: 0 auto 10px;
+  }
+}

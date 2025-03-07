@@ -62,7 +62,66 @@
   text-transform: capitalize;
   color: var(--light-color);
 }
-
 .about .about_right {
   width: 40%;
+}
+
+/* Start Media Queries */
+
+/* Devices (less than 1200px) */
+@media (max-width: 1199.98px) {
+  .about .about_left .text p {
+    margin-bottom: 25px;
+  }
+  .about .about_left h6 {
+    margin-bottom: 15px;
+  }
+  .about .about_left .desktop_icon {
+    font-size: 25px;
+  }
+  .about .about_left .skills {
+    gap: 15px;
+  }
+  .about .about_left .skill {
+    width: 95px;
+    padding: 7px 0;
+    border-radius: 7px;
+  }
+  .about .about_left .skill .img_skill {
+    height: 45px;
+  }
+  .about .about_left .skill span {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+}
+
+/* Devices (less than 768px) */
+@media (max-width: 767.98px) {
+  .about .about_left {
+    width: 100%;
+  }
+  .about .about_right {
+    display: none;
+  }
+}
+
+/* Devices(less than 576px) */
+@media (max-width: 575.98px) {
+  .about .about_left .text p {
+    font-size: 16px;
+  }
+  .about .about_left h6 {
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  .about .about_left .desktop_icon {
+    font-size: 30px;
+  }
+  .about .about_left .skills {
+    justify-content: center;
+    align-items: center;
+  }
 }
