@@ -8,12 +8,17 @@ import Portfolio from "../3-portfolio/Portfolio";
 import Contact from "../4-contact/Contact";
 import MyImg from "../../assets/me.jpg";
 import "./home.css";
+import { useState } from "react";
+
 
 function Home() {
+  const [AddClass , SetAddClass] = useState(true);
+   
   return (
     <div className="home">
       <div className="container">
-        <div className="left">
+       {AddClass &&(
+         <div className="left">
           <div className="avatar">
             <div className="my_img">
               <img src={MyImg} alt={MyImg} />
@@ -41,18 +46,25 @@ function Home() {
             </a>
           </div>
         </div>
+       )}
 
         <div className="right">
           <nav>
             <ul>
               <li>
-                <Link to={"/about"}>about</Link>
+                <Link  onClick={()=>{
+                  SetAddClass(true)
+                }}  to={"/about"}>about</Link>
               </li>
               <li>
-                <Link to={"/portfolio"}>portfolio</Link>
+                <Link onClick={()=>{
+                  SetAddClass(false)
+                }} to={"/portfolio"}>portfolio</Link>
               </li>
               <li>
-                <Link to={"/contact"}>contact</Link>
+                <Link  onClick={()=>{
+                  SetAddClass(true)
+                }}  to={"/contact"}>contact</Link>
               </li>
               <li>
                 <a href="/" target="_blank">

@@ -58,7 +58,7 @@ const About = () => {
         </div>
         <>
           <h6>
-          <IoIosDesktop className="desktop_icon" />the technologies I've worked with :-</h6>
+          <IoIosDesktop className="desktop_icon" />the technologies I've worked with </h6>
           <div className="skills">
             {myskills.map((item) => {
               return (

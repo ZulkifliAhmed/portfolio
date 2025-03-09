@@ -1,1 +1,30 @@
- 
+.portfolio p {
+  font-family: cursive;
+  color: var(--light-color);
+}
+.portfolio .box {
+  padding-top: 35px;
+  display: flex;
+  gap: 50px;
+}
+.portfolio .box ul {
+  width: 150px;
+  text-align: center;
+  list-style: none;
+}
+.portfolio .box ul li {
+  padding: 10px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  color: var(--text-color);
+  border: 1px solid transparent;
+  background-color: var(--border-color);
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+.portfolio .box ul li:hover {
+  color: var(--light-color);
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+}
