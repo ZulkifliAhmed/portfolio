@@ -22,7 +22,7 @@
   font-size: 16px;
   font-weight: normal;
   font-family: cursive;
-  color: var(--light-color);
+  color: var(--titel-color);
   line-height: 1.5;
   letter-spacing: 0.5px;
 }
@@ -60,7 +60,7 @@
   font-size: 15px;
   letter-spacing: 1px;
   text-transform: capitalize;
-  color: var(--light-color);
+  color: var(--titel-color);
 }
 .about .about_right {
   width: 40%;

@@ -6,13 +6,13 @@
 }
 .home .container .left,
 .home .container .right {
- min-height: calc(100vh - 50px);
   border-radius: 10px;
   border: 1px solid var(--border-color);
   background-color: var(--cart-color);
 }
 /*** Left ***/
 .home .container .left {
+  height: calc(100vh - 50px);
   width: 380px;
   padding: 30px 0 45px;
   display: flex;
@@ -46,7 +46,7 @@
 .home .left .avatar .my_name h3 {
   font-size: 21px;
   font-weight: 500;
-  color: var(--light-color);
+  color: var(--titel-color);
 }
 .home .left .avatar .my_name h5 {
   margin: 12px 0 0;
@@ -69,23 +69,24 @@
   gap: 25px;
 }
 .home .left .my-links a {
-  font-size: 22px;
+  font-size: 25px;
   color: var(--icon-color);
   transition: var(--main-transition);
 }
 .home .left .my-links a:hover {
-  color: var(--light-color);
+  color: var(--titel-color);
   transform: rotate(360deg);
 }
 
 /*** Right ***/
 .home .container .right {
   width: 100%;
+  min-height: calc(100vh - 50px);
 }
 .home .right nav {
   width: fit-content;
   margin-left: auto;
-  padding: 20px;
+  padding: 20px 30px 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,10 +102,30 @@
   list-style: none;
 }
 .home .right nav ul li a {
-  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
   color: var(--text-color);
   text-decoration: none;
   text-transform: capitalize;
+  cursor: pointer;
+}
+.home .right nav a .icon_nav {
+  display: none;
+}
+.home .right nav .my-mode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+}
+.home .right nav .my-mode .moon {
+  color: var(--text-color);
+  cursor: pointer;
+}
+.home .right nav .my-mode .sun {
+  color: #efba6af4;
   cursor: pointer;
 }
 
@@ -121,64 +142,98 @@
 @media (max-width: 991.98px) {
   .home .container {
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
   }
   .home .container .left {
     width: 100%;
-    height: calc(100vh - 50%);
-    padding: 20px 0;
-    border-radius: 0 0 10px 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    height: fit-content;
+    padding: 20px 20px 20px 70px;
+    flex-direction: row;
   }
   .home .left .avatar {
-    gap: 10px;
+    flex-direction: row;
   }
   .home .left .avatar .my_img {
     width: 160px;
     height: 160px;
   }
+  .home .left .avatar .my_name {
+    padding: 0;
+    border-radius: 0;
+    box-shadow: 0px 0px 0px;
+  }
   .home .left .my_gap {
-    width: 20%;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    display: none;
   }
   .home .left .my-links {
-    gap: 25px;
-  }
-  .home .left .my-links a {
-    font-size: 28px;
+    flex-direction: column;
+    gap: 10px;
   }
 }
 
 /* Devices (less than 768px) */
 @media (max-width: 767.98px) {
-  .home .container {
-    gap: 0;
-  }
-  .home .container .left {
-    height: fit-content;
-    padding-bottom: 80px;
-    border-radius: 0;
-    border-bottom: transparent;
-  }
   .home .container .right {
-    height: fit-content;
-    border-radius: 0 0 10px 10px;
-    border-top: transparent;
+    padding-top: 50px;
   }
-  .home .right nav {
+  .home .container .right nav {
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    transition: var(--main-transition);
+    opacity: 0.5;
+    z-index: 99;
+  }
+  .home .container .right nav:hover {
+    opacity: 1;
+  }
+  .home .right nav a span {
     display: none;
   }
-  .home .left .my_gap {
-    width: 28%;
+  .home .right nav a .icon_nav {
+    display: block;
+    font-size: 22px;
+    transition: var(--main-transition);
+  }
+  .home .right nav a .icon_nav:hover {
+    color: var(--icon-color);
+    transform: translateY(-5px);
   }
 }
 
 /* Devices(less than 576px) */
 @media (max-width: 575.98px) {
-  .home .container .right {
-    border-radius: 0 0 7px 7px;
+  .home .container {
+    gap: 10px;
+  }
+  .home .container .left {
+    padding: 25px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .home .left .avatar {
+    gap: 15px;
+    flex-direction: column;
+  }
+  .home .left .avatar .my_img {
+    width: 130px;
+    height: 130px;
+  }
+  .home .left .avatar .my_name {
+    letter-spacing: 0.5px;
+  }
+  .home .left .avatar .my_name h3 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .home .left .avatar .my_name h5 {
+    margin: 7px;
+    padding: 5px;
+    font-size: 13px;
+  }
+  .home .left .my-links {
+    flex-direction: row;
   }
 }
