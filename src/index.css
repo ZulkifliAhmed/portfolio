@@ -11,12 +11,12 @@
   --main-transition: 0.5s all ease;
 }
 .light{
-  --bg-color: #d1d1d1;
-  --titel-color: #121212;
-  --cart-color: #1e1e1f;
-  --border-color: #363637;
-  --text-color: #ffffff77;
-  --icon-color: #6ec596;
+  --bg-color: #ffffff;
+  --titel-color: #4a4a4a;
+  --cart-color: #ededed;
+  --border-color: #a5d6a7;
+  --text-color:  #363637;
+  --icon-color: #64b5f6;
 }
 * {
   padding: 0;

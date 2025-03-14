@@ -9,6 +9,7 @@
   border-radius: 10px;
   border: 1px solid var(--border-color);
   background-color: var(--cart-color);
+  overflow: hidden;
 }
 /*** Left ***/
 .home .container .left {
@@ -111,6 +112,10 @@
   text-transform: capitalize;
   cursor: pointer;
 }
+.home .right nav ul li a.active {
+  font-weight: 600;
+  color: var(--titel-color);
+}
 .home .right nav a .icon_nav {
   display: none;
 }
@@ -119,6 +124,7 @@
   justify-content: center;
   align-items: center;
   font-size: 23px;
+  transition: var(--main-transition);
 }
 .home .right nav .my-mode .moon {
   color: var(--text-color);
@@ -197,7 +203,8 @@
     font-size: 22px;
     transition: var(--main-transition);
   }
-  .home .right nav a .icon_nav:hover {
+  .home .right nav a .icon_nav:hover,
+  .home .right nav .my-mode:hover {
     color: var(--icon-color);
     transform: translateY(-5px);
   }
@@ -235,5 +242,12 @@
   }
   .home .left .my-links {
     flex-direction: row;
+  }
+  .home .right nav {
+    padding: 15px;
+    gap: 25px;
+  }
+  .home .right nav ul {
+    gap: 25px;
   }
 }

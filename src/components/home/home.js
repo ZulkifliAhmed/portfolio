@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, NavLink } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 import { FaLaptopCode } from "react-icons/fa";
 import { PiReadCvLogoLight } from "react-icons/pi";
@@ -64,17 +64,17 @@ useEffect(()=>{
           <nav>
             <ul>
               <li>
-                <Link
+                <NavLink
                   onClick={() => {
                     SetAddClass(true);
                   }}
                   to={"/about"}
                 >
                   <IoHome  className="icon_nav" /> <span>about</span>
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   onClick={() => {
                     SetAddClass(false);
                   }}
@@ -82,22 +82,22 @@ useEffect(()=>{
                 >
                   {" "}
                   <FaLaptopCode className="icon_nav" /> <span>portfolio</span>
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   onClick={() => {
                     SetAddClass(true);
                   }}
                   to={"/contact"}
                 >
                   <MdContactPhone className="icon_nav" /> <span>contact</span>{" "}
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link href="/" target="_blank">
+                <NavLink to={"/"} target="_blank">
                   <PiReadCvLogoLight className="icon_nav" /> <span>my cv</span>
-                </Link>
+                </NavLink>
               </li>
             </ul>
             <div className="my-mode" onClick={()=>{
