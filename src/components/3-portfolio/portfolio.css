@@ -1,9 +1,9 @@
 .portfolio p {
   font-family: cursive;
-  color: var(  --titel-color);
+  color: var(--titel-color);
 }
 .portfolio .box {
-  padding-top: 50px;
+  padding-top: 30px;
   display: flex;
   justify-content: space-between;
   gap: 30px;
@@ -27,7 +27,7 @@
 }
 .portfolio .box ul li:hover,
 .portfolio .box ul .active {
-  color: var(  --titel-color);
+  color: var(--titel-color);
   background-color: transparent;
   border: 1px solid var(--border-color);
 }
@@ -49,6 +49,9 @@
   overflow: hidden;
   cursor: default;
 }
+.portfolio .box .project .pr_imeg {
+  height: 200px;
+}
 .portfolio .box .project:hover {
   rotate: 1deg;
   scale: 1.01;
@@ -58,7 +61,7 @@
   font-size: 17px;
   font-weight: 600;
   text-transform: capitalize;
-  color: var(  --titel-color);
+  color: var(--titel-color);
 }
 .portfolio .box .project p {
   padding: 0px 15px;
@@ -76,7 +79,7 @@
   text-transform: capitalize;
 }
 .portfolio .box .project .pr_links a {
-  color: var(  --titel-color);
+  color: var(--titel-color);
   font-size: 16px;
   transition: var(--main-transition);
 }

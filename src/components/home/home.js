@@ -42,18 +42,18 @@ useEffect(()=>{
             </div>
             <div className="my_gap"></div>
             <div className="my-links">
-              <a href="/">
+              <a href="https://github.com/ZulkifliAhmed" target="_blank">
                 <FaGithub />
               </a>
 
-              <a href="/">
+              <a href="https://www.linkedin.com/in/zulkifliahmed/" target="_blank">
                 <FaLinkedin />
               </a>
 
-              <a href="/">
+              <a href="https://www.facebook.com/ZulkifliAhmedIsmael" target="_blank">
                 <FaFacebook />
               </a>
-              <a href="/">
+              <a href="mailto:zulkifli.adoma@gmail.com" target="_blank">
                 <MdEmail />
               </a>
             </div>

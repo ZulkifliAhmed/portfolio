@@ -48,13 +48,7 @@ const About = () => {
         <div className="text">
           <Titel name="about me" />
           <p>
-            I'm a Front End Developer specializing in web development and
-            copywriting. My role is to build websites that are not only
-            functional and user-friendly but also visually appealing. I add a
-            personal touch to your product, ensuring it’s eye-catching and easy
-            to navigate. My goal is to convey your message and identity in the
-            most creative and innovative way.
-          </p>
+          I am Zulkifli Ahmed, a Frontend Developer specializing in React.js, with experience in building high-performance web applications. I also have backend knowledge, allowing me to integrate systems efficiently. I’m passionate about creating seamless and innovative user experiences using the latest technologies.          </p>
         </div>
         <>
           <h6>

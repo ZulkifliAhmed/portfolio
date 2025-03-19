@@ -11,8 +11,8 @@ const Contact = () => {
         <div className="contact_us">
           <p>contact me for more information</p>
           <form>
-            <input type="email" placeholder="enter you email" />
-            <textarea placeholder="enter you messig" ></textarea>
+            <input type="email" placeholder="enter you email" required />
+            <textarea placeholder="enter you messig" required></textarea>
             <button>send</button>
           </form>
         </div>
