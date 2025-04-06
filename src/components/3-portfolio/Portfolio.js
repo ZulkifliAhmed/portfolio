@@ -8,10 +8,15 @@ import { AnimatePresence , motion } from "motion/react";
 const Portfolio = () => {
   const [currentActive, setcurrentActive] = useState("all");
   const [myFilter, setmyFilter] = useState(Projects);
+
   const handleclick = (el) => {
     setcurrentActive(el);
+
     let newArr = Projects.filter((item) => {
-      return item.category === el;
+      const SecondFilter = item.category.find((myitem)=>{
+        return myitem === el;
+      })
+      return  SecondFilter === el;
     });
     setmyFilter(newArr);
   };
@@ -85,10 +90,10 @@ const Portfolio = () => {
                   <p>{item.description}</p>
                   <div className="pr_links">
                     <div className="demo">
-                      <a href={item.demo}>demo</a>
+                      <a href={item.demo} target="_blank">demo</a>
                     </div>
                     <div className="github">
-                      <a href={item.github}>github</a>
+                      <a href={item.github} target="_blank">github</a>
                     </div>
                   </div>
                 </motion.div>

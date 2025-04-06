@@ -108,6 +108,10 @@
 
 /* Devices(less than 576px) */
 @media (max-width: 575.98px) {
+  .about {
+    display: flex;
+ padding-bottom: 100px;
+  }
   .about .about_left .text p {
     font-size: 16px;
   }

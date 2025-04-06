@@ -1,6 +1,6 @@
 .home .container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 20px;
 }
@@ -242,6 +242,9 @@
   }
   .home .left .my-links {
     flex-direction: row;
+  }
+  .home .container .right {
+    padding-bottom: 50px;
   }
   .home .right nav {
     padding: 15px;
